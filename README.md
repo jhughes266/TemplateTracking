@@ -1,4 +1,4 @@
-# Object Tracker with Timer
+# Template Tracker
 
 ## Table of Contents
 - [Overview](#overview)
