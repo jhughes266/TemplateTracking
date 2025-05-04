@@ -1,0 +1,48 @@
+//Explanations of settings//
+[Program Settings]---------------------------------------------------------------------------------------------------------------------------------------------------
+//roiSize --> Has two different meanings depending on the "roiMode". If the "roiMode" is 0(fixed) corresponds to the side length of the roi square as a percentage of the "camResolutionWidth". If the "roiMode" is 1(adjustable) corresponds to the hypotenuse of the roi square as a percentage of the "camResolutionWidth".
+//tmThreshold --> This is the proportion that represents the required similarity between the template and a specific location within the template matching operation to be considered a match. Any matches bellow this value are considered matches any above are considered not to be matches.
+//roiMode --> 0(fixed size) the ROI size remains constant. 1(adjustable) the roi size adjusts depending on the direction in which the template in the image is travelling
+//minMovingRoiScale --> Only valid in adjustable mode. in adjustable mode because the ROI side lengths are based off the angle at which the template within the image is travelling. If it is travelling to vertically or horizontally it will cause the ROI to be far to narrow. This will pad the ROI in adjustable mode with however many templates have been entered in this setting to ensure that this does not happen.
+[Camera Settings] ----------------------------------------------------------------------------------------------------------------------------------------------------
+//camID --> A positive integer for the camera id as recognised by the OS. '0' is the default which will find the most recently connected device
+//camResolutionWidth --> The width of the frame in pixels
+//camResolutionHeight --> The height of the frame in pixels
+[Data Log settings] ---------------------------------------------------------------------------------------------------------------------------------------------------
+//dataLogSwitch --> can be 0(no save) data will not be saved to the textfile or 1(save) data will be saved to the text file
+//dataLogWriteMode --> can be 0(end) all data is written to text file at one time only when program finishes execution or 1(run time) data is written to text file during program run-time
+[Serial Settings] -----------------------------------------------------------------------------------------------------------------------------------------------------
+//serialBaudRate --> The serial baud rate an integer between 1 and 11520 inclusive
+//serialCOMport --> Select the COM port(eg: for com2 setting would be 'COM2'). AUTO will automatically assign the com port.
+//serialLogMode --> 0 Serial port is closed, and no data is exported. 1 Detection data is continuously written to the serial port. 2 Detection data is written to the serial port only when a request from user is received the request command is 'GetPos'
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[Program Settings]
+roiSize= 0.20
+tmThreshold= 0.13
+roiMode= 1
+minMovingRoiScale= 1.3
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[Camera Settings]
+camID= 0
+camResolutionWidth= 640
+camResolutionHeight= 360
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[Data Log settings]
+dataLogSwitch= 1
+dataLogWriteMode= 1
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[Serial Settings]
+serialBaudRate= 9600
+serialCOMport= 3 
+serialLogMode= 2
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+

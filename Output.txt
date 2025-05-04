@@ -1,0 +1,8 @@
+
+Execution of object tracking program. Sun May  4 22:07:38 2025
+WARNINGS----------------------------------------
+      Warning: No communication port detected! Check the serial device is connected and the COM port number is correctly set in the config file
+
+Execution of object tracking program. Sun May  4 22:10:19 2025
+WARNINGS----------------------------------------
+      Warning: No communication port detected! Check the serial device is connected and the COM port number is correctly set in the config file
