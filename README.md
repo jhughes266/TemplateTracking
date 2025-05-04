@@ -1,4 +1,4 @@
-# Object Tracker with Timer (Educational Utility)
+# Object Tracker with Timer
 
 ## Table of Contents
 - [Overview](#overview)
